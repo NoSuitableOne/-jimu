@@ -1,11 +1,11 @@
-# `@jimu/comps`
+# `@budlocks/comps`
 
 > TODO: description
 
 ## Usage
 
 ```
-const comps = require('@jimu/comps');
+const comps = require('@budlocks/comps');
 
 // TODO: DEMONSTRATE API
 ```

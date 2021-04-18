@@ -2,6 +2,6 @@
 
 const comps = require('..');
 
-describe('@jimu/comps', () => {
+describe('@budlocks/comps', () => {
     it('needs tests');
 });

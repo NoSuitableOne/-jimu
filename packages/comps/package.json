@@ -1,6 +1,6 @@
 {
-  "name": "@jimu/comps",
-  "version": "0.0.1-dev-1.1",
+  "name": "@budlocks/comps",
+  "version": "0.0.1-dev-1",
   "description": "components",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -32,7 +32,7 @@
     "@jimu/comps",
     "react-components"
   ],
-  "homepage": "",
+  "homepage": "https://github.com/NoSuitableOne/jimu#readme",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -41,5 +41,11 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "gitHead": "3eb540263898a094bb6c6f7a1c2abe3f5cfa99f0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoSuitableOne/jimu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NoSuitableOne/jimu/issues"
+  }
 }

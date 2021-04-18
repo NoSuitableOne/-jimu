@@ -2,6 +2,6 @@
 
 const hooks = require('..');
 
-describe('@jimu/hooks', () => {
+describe('@budlocks/hooks', () => {
     it('needs tests');
 });
