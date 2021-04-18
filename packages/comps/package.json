@@ -1,6 +1,6 @@
 {
   "name": "@jimu/comps",
-  "version": "0.0.1-dev-1.0",
+  "version": "0.0.1-dev-1",
   "description": "components",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -38,7 +38,8 @@
     "test": "__tests__"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
-  "gitHead": "2fbf99e15d668e173d6d6cce4adac4cd05e0297e"
+  "gitHead": "3eb540263898a094bb6c6f7a1c2abe3f5cfa99f0"
 }
