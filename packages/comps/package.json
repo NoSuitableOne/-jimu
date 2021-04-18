@@ -1,6 +1,6 @@
 {
   "name": "@jimu/comps",
-  "version": "0.0.1-dev-1",
+  "version": "0.0.1-dev-1.0",
   "description": "components",
   "main": "lib/index.js",
   "module": "es/index.js",
