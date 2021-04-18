@@ -1,6 +1,6 @@
 node_modules
 
-lerna-debug.file
+lerna-debug.log
 
 **/dist
 **/es
