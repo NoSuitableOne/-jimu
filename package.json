@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "start": "",
-    "build": "father-build"
+    "build": "father-build",
+    "publish": "lerna publish"
   },
   "workspaces": [
     "packages/*"
