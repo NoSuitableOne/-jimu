@@ -36,5 +36,6 @@
   ],
   "publishConfig": {
     "registry": "http://192.168.150.59:8081/repository/npm-group1/"
-  }
+  },
+  "gitHead": "40f89dbdfedfaa30f52d44ac384725ee439d032c"
 }
