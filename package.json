@@ -2,13 +2,16 @@
   "name": "jimu",
   "private": true,
   "scripts": {
-    "start": "APP_ROOT=packages/main umi dev",
-    "build": "father-build",
-    "users:build": "COMPRESS=none APP_ROOT=packages/users umi build && cp packages/users/dist/* packages/main/public"
+    "start": "",
+    "build": "father-build"
   },
   "workspaces": [
     "packages/*"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:NoSuitableOne/jimu.git"
+  },
   "devDependencies": {
     "father-build": "^1.19.4",
     "lerna": "^3.22.1",
