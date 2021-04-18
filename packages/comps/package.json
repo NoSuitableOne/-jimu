@@ -38,7 +38,7 @@
     "test": "__tests__"
   },
   "publishConfig": {
-    "registry": "http://192.168.150.59:8081/repository/npm-group1/"
+    "registry": "https://registry.npmjs.org/"
   },
-  "gitHead": "40f89dbdfedfaa30f52d44ac384725ee439d032c"
+  "gitHead": "2fbf99e15d668e173d6d6cce4adac4cd05e0297e"
 }
