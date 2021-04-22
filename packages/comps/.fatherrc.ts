@@ -3,7 +3,7 @@ const common = {
   runtimeHelpers: true,
   extraBabelPlugins: [
     ['babel-plugin-import', {
-      libraryName: 'antd',
+      libraryName: 'antd', 
       libraryDirectory: 'es',
       style: true,
     }],

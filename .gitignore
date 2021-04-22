@@ -5,3 +5,5 @@ lerna-debug.log
 **/dist
 **/es
 **/lib
+
+.umi
