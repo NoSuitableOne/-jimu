@@ -1,11 +1,17 @@
 import React from 'react';
 import { Select as AntdSelect } from 'antd';
-import styles from './style.less';
+import cls from 'classnames';
 
-export default class Slider extends React.Component {
+interface IProps {
+  prefixCls: string
+}
+interface IState {
+};
+export default class Slider extends React.Component<IProps, IState> {
   render() {
+    const { prefixCls = 'budlocks_comps_' } = this.props;
     return (
-      <AntdSelect className={styles.select} defaultValue="lucy">
+      <AntdSelect className={`${prefixCls}select`} defaultValue="lucy">
         <AntdSelect.Option value="lucy">lucy</AntdSelect.Option>
       </AntdSelect>
     );

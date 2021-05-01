@@ -4,13 +4,13 @@
   "description": "hooks组件",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "hooks"
   ],
   "author": "NoSuitableOne@github.com",
+  "scripts": {
+    "build:babel": "babel"
+  },
   "license": "ISC",
   "peerDependencies": {
     "react": ">=16.9.0",
@@ -44,5 +44,25 @@
   },
   "bugs": {
     "url": "https://github.com/NoSuitableOne/jimu/issues"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix src/**/*.{ts,tsx}",
+      "jest",
+      "git add ."
+    ],
+    "*.{md,css,html,less}": [
+      "prettier --write",
+      "git add ."
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "@types/testing-library__react": "^10.2.0",
+    "eslint": "^7.24.0",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.5.5"
   }
 }

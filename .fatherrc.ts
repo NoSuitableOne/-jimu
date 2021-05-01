@@ -9,7 +9,7 @@ const esm = {
 };
 
 const cjs = {
-  type: 'babel'
+  type: 'rollup'
 };
 
 export default {

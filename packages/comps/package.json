@@ -5,15 +5,18 @@
   "main": "lib/index.js",
   "module": "es/index.js",
   "typings": "typings/global/index.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "files": [
     "lib",
     "es"
   ],
   "author": "NoSuitableOne@github.com",
   "license": "ISC",
+  "scripts": {
+    "build": "yarn run build:cjs && yarn run build:esm && yarn run build:style",
+    "build:cjs": "babel src --out-dir ./babels/lib --root-mode upward -x '.ts,.tsx'",
+    "build:esm": "BABEL_ENV=esm babel src --out-dir ./babels/es --root-mode upward -x '.ts,.tsx'",
+    "build:style": "gulp style"
+  },
   "peerDependencies": {
     "antd": ">=4",
     "react": ">=16.9.0",
@@ -27,6 +30,28 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
+    "@types/jest": "^26.0.22",
+    "@types/testing-library__react": "^10.2.0",
+    "babel-jest": "^26.6.3",
+    "classnames": "^2.3.1",
+    "eslint": "^7.24.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-filesize": "^0.0.6",
+    "gulp-sourcemaps": "^3.0.0",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.4",
+    "postcss-selector-prefixer": "^1.0.2",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.5.5"
   },
   "keywords": [
     "@jimu/comps",

@@ -5,5 +5,7 @@ lerna-debug.log
 **/dist
 **/es
 **/lib
+**/babels
+**/tsc
 
 .umi

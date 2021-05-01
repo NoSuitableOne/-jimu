@@ -8,11 +8,11 @@ export default defineConfig({
   //   'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
   outputPath: 'docs-dist',
   alias: {
-    '@budblocks/comps': resolve(
+    '@budlocks/comps': resolve(
       __dirname,
-      './packages/comps/src/index.ts',
+      './packages/comps/src',
     ),
-    '@budblocks/hooks': resolve(__dirname, './packages/hooks/src/index.ts'),
+    '@budlocks/hooks': resolve(__dirname, './packages/hooks/src'),
   },
   resolve: {
     includes: [
@@ -39,10 +39,13 @@ export default defineConfig({
     ],
   },
   extraBabelPlugins: [
-    ['import', {
-      libraryName: 'antd', 
-      libraryDirectory: 'es',
-      style: true,
-    }],
+    [
+      'import', 
+      {
+        "libraryName": "antd",
+        "libraryDirectory": "es",
+        "style": true
+      } 
+    ]
   ]
 });

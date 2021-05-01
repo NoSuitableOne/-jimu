@@ -1,0 +1,53 @@
+{  
+  "babelrcRoots": [
+    ".",
+    "packages/*"
+  ],
+  "presets": [    
+    [      
+      "@babel/preset-env",      
+      {    
+        "useBuiltIns": "usage",
+        "corejs": {
+          "version": 3,
+          "proposals": true
+        }    
+      } 
+    ],
+    "@babel/preset-react",
+    "@babel/preset-typescript"   
+  ],
+  "plugins": [
+    "@babel/proposal-class-properties",
+    "@babel/plugin-transform-runtime"
+  ],
+  "env": {
+    "esm": {
+      "presets": [    
+        [      
+          "@babel/preset-env",      
+          {     
+            "useBuiltIns": "usage",
+            "corejs": {
+              "version": 3,
+              "proposals": true
+            },
+            "modules": false      
+          } 
+        ]
+      ],
+      "plugins": [
+        [
+          "@babel/plugin-transform-runtime",
+          {
+            "corejs": 3,
+            "useESModules": true
+          }
+        ]
+      ]
+    }
+  },
+  "ignore": [
+    "**/__tests__"
+  ]
+}

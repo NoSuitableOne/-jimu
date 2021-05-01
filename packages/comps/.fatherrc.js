@@ -5,8 +5,8 @@ const common = {
     ['babel-plugin-import', {
       libraryName: 'antd', 
       libraryDirectory: 'es',
-      style: true,
-    }],
+      style: true
+    }]
   ]
 };
 
