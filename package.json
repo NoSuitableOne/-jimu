@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:NoSuitableOne/jimu.git"
+    "url": "git@github.com:NoSuitableOne/budlocks.git"
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.13.8",

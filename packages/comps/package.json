@@ -54,10 +54,10 @@
     "ts-jest": "^26.5.5"
   },
   "keywords": [
-    "@jimu/comps",
+    "@budlocks/comps",
     "react-components"
   ],
-  "homepage": "https://github.com/NoSuitableOne/jimu#readme",
+  "homepage": "https://github.com/NoSuitableOne/budlocks/blob/develop/packages/comps/README.md",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -68,9 +68,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NoSuitableOne/jimu.git"
+    "url": "git+https://github.com/NoSuitableOne/budlocks.git"
   },
   "bugs": {
-    "url": "https://github.com/NoSuitableOne/jimu/issues"
+    "url": "https://github.com/NoSuitableOne/budlocks/issues"
   }
 }

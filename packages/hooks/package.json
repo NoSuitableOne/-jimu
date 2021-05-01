@@ -25,7 +25,7 @@
     "react-dom": "^17.0.2",
     "typescript": "^4.2.4"
   },
-  "homepage": "https://github.com/NoSuitableOne/jimu#readme",
+  "homepage": "https://github.com/NoSuitableOne/budlocks/blob/develop/packages/hooks/README.md",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -40,10 +40,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NoSuitableOne/jimu.git"
+    "url": "git+https://github.com/NoSuitableOne/budlocks.git"
   },
   "bugs": {
-    "url": "https://github.com/NoSuitableOne/jimu/issues"
+    "url": "https://github.com/NoSuitableOne/budlocks/issues"
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
