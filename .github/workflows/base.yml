@@ -11,6 +11,7 @@ jobs:
     name: install ${{ matrix.os }} ${{ matrix.node }}
     runs-on: ${{ matrix.os }}
     steps:
+      - uses: actions/checkout@v2
       # Setup node with version 12.x and NPM registry url
       - name: Use NodeJS
         uses: actions/setup-node@v1
