@@ -8,13 +8,13 @@ jobs:
       matrix:
         os: [ubuntu-latest]
         node: ["12"]
-    runs-on: ${{ martix.os }}
+    runs-on: ${{ matrix.os }}
     steps:
       # Setup node with version 12.x and NPM registry url
       - name: Use NodeJS
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ martix.node }}
+          node-version: ${{ matrix.node }}
           registry-url: "https://registry.npmjs.org"
       # install yarn
       - name: Install yarn 
