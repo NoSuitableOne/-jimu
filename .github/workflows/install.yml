@@ -2,17 +2,13 @@ name: GitHub Actions Demo
 
 on: [push]
 
-strategy:
-  matrix:
-    os: [ubuntu-latest]
-    node: ["12"]
-
-name: test - ${{ matrix.os }} - ${{ matrix.node }}
-runs-on: ${{ matrix.os }}
-
 jobs:
   install: # 安装任务
-    name: install yarn - ${{ martix.os }} - ${{ martix.node }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: ["12"]
+        name: install yarn - ${{ martix.os }} - ${{ martix.node }}
     runs-on: ${{ martix.os }}
     steps:
       # Setup node with version 12.x and NPM registry url
