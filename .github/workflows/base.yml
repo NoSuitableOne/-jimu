@@ -33,6 +33,6 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: test
-        run: yarn run test
+        run: ls -l
   
   
