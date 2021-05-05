@@ -23,10 +23,8 @@ jobs:
       # run yarn install to install dependencies
       - name: Install dependencies
         run: yarn install
-      # run lerna boostrap
-      - name: Lerna bootstrap
-        run: lerna bootstrap
   test: # 测试任务
+    needs: install
     strategy:
       matrix:
         os: [ubuntu-latest]
