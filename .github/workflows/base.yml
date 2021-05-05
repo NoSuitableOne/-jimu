@@ -1,4 +1,4 @@
-name: GitHub Actions Demo
+name: Base GitHub Actions
 
 on: [push]
 
@@ -8,6 +8,7 @@ jobs:
       matrix:
         os: [ubuntu-latest]
         node: ["12"]
+    name: install ${{ matrix.os }} ${{ matrix.node }}
     runs-on: ${{ matrix.os }}
     steps:
       # Setup node with version 12.x and NPM registry url
@@ -21,5 +22,19 @@ jobs:
         run: npm install yarn
       # run yarn install to install dependencies
       - name: Install dependencies
-        run: |
-          yarn install
+        run: yarn install
+      # run lerna boostrap
+      - name: Lerna bootstrap
+        run: lerna bootstrap
+  test: # 测试任务
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: ["12"]
+    name: test ${{ matrix.os }} ${{ matrix.node }}
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: test
+        run: yarn run test
+  
+  
