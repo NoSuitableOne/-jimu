@@ -106,6 +106,7 @@ jobs:
             ${{ runner.os }}-yarn-
       - name: Lerna publish
         run: |
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
           lerna publish from-package --no-verify-access --yes
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
