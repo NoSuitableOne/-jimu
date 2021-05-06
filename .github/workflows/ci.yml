@@ -1,4 +1,4 @@
-name: Base GitHub Actions
+name: CI
 
 on: [push]
 
@@ -21,6 +21,17 @@ jobs:
       # install yarn
       - name: Install yarn 
         run: npm install yarn
+      # restore cache
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: |
+            node_modules
+            packages/**/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
       # run yarn install to install dependencies
       - name: Install dependencies
         run: yarn
@@ -33,6 +44,19 @@ jobs:
     name: test
     runs-on: ${{ matrix.os }}
     steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Load node_modules
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: |
+            node_modules
+            packages/**/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
       - name: Test
         run: yarn test
   
