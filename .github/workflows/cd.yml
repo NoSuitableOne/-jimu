@@ -2,8 +2,8 @@ name: CD
 
 on:
   push:
-    tags: 
-      release-v* 
+    branches:
+      master
 
 jobs:
   install: # 安装任务
@@ -104,12 +104,6 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
-      - name: Merge master branch
-        uses: devmasx/merge-branch@v1.3.1
-        with:
-          type: now
-          target_branch: uat
-          github_token: ${{ github.token }}
       - name: Lerna publish
         run: |
           lerna publish from-package --no-verify-access --yes
