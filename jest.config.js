@@ -2,7 +2,7 @@ const config = {
   verbose: true,
   testEnvironment: "jsdom",
   roots: [
-    "<rootDir>/packages/comps"
+    "<rootDir>/packages/comps/src"
   ],
   moduleNameMapper: {
     '\\.(css|less|scss)$': 'identity-obj-proxy'
