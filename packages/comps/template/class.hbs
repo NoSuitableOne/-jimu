@@ -1,0 +1,30 @@
+import * as React from 'react';
+
+type IProps = {
+  prefixCls?: string
+};
+
+type IState = {
+};
+
+class {{pascalCase name}} extends React.Component<IProps, IState> {
+  static defaultProps = {
+    prefixCls: 'budlocks_comps_',
+  };
+
+  readonly state: IState = {
+  };
+
+  render() {
+    const {} = this;
+    const { prefixCls } = this.props;
+    const {} = this.state;
+
+    return (
+      <div className={`${prefixCls}{{name}}`}>
+      </div>
+    );
+  }
+}
+
+export default {{pascalCase name}};

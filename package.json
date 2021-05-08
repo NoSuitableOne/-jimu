@@ -38,8 +38,10 @@
     "jest-environment-jsdom": "^26.6.2",
     "lerna": "^3.22.1",
     "lint-staged": "^10.5.4",
+    "plop": "^2.7.4",
     "prettier": "^2.2.1",
-    "ts-jest": "^26.5.5"
+    "ts-jest": "^26.5.5",
+    "ts-node": "^9.1.1"
   },
   "dependencies": {
     "@babel/register": "^7.13.16",

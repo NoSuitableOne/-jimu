@@ -1,0 +1,19 @@
+import * as React from 'react';
+
+type Props = {
+  prefixCls?: string
+};
+
+const {{pascalCase name}}: React.FC<Props> = props => {
+  const { prefixCls } = props;
+
+  return (
+    <div className={`${prefixCls}{{name}}`}>
+    </div>
+  );
+};
+{{pascalCase name}}.defaultProps = {
+  prefixCls: 'budlocks_comps_'
+};
+
+export default {{pascalCase name}};
